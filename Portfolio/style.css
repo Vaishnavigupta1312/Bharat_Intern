@@ -23,9 +23,10 @@ body{
     height:100%;
     min-height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://img.freepik.com/free-vector/dark-blue-memphis-blog-banner-template_53876-98946.jpg?w=2000);
-    background-size: cover;
+    background-size:cover ;
     background-position: center;
     position: relative;
+    padding-bottom: 30px;
 }
 header{
     padding: 40px 0 30px;
@@ -104,6 +105,11 @@ nav .nav_list li.btn:hover a{
     border: 2px solid transparent;
     transition: .4s;
 }
+/* #darkmode{
+    padding-left: 5px;
+    font-size: 1.4 rem;
+    cursor: pointer;
+} */
 .container{
     padding-top: 190px;
 }
@@ -152,8 +158,9 @@ span{
     background: #2ecc71;
     transition: .4s;
 }
-.container .hero_text button{
-    color:#eee;
+button{
+    
+    color:white;
     background: #2ecc71;
     font-size: 16px;
     font-weight: 500;
@@ -163,21 +170,15 @@ span{
     border-radius: 30px;
     cursor: pointer;
 }
-.container .hero_text button:hover{
+
+button:hover{
     background: transparent;
     border: 2px solid #2ecc71;
     color: #2ecc71;
     transition: .4s;
 }
-.bottom{
-    margin-top: 243px;
-    padding-bottom: 40px ;
-}
-.bottom p{
-    color:#eee;
-    letter-spacing: 2px;
-    font-size: 15px;
-}
+
+
 @media screen and (max-width: 930px){
     nav .hamb{
         display: initial;
@@ -204,7 +205,7 @@ span{
     nav .nav_list{
         position: absolute;
         top:90px;
-        right:0;
+        right:-65%;
         bottom:0;
         width:60%;
         height:50%;
@@ -236,13 +237,174 @@ span{
     }
     nav .nav_list.open{
         right:0;
-    }
-    
+    } 
+}
+.about {
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #403c3c;
 }
 
+.about img{
+    height: auto;
+    width: 430px;
+}
 
+.about-text{
+    width: 550px;
+}
+.main{
+    width:1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about-text h2{
+    color: white;
+    font-size:47px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.about-text h5{
+    color: white;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+.about-text p{
+    color: white;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 15px;
+    margin-bottom: 45px;
+}
+a{ 
+    color:inherit;
+}
+/* .about button{
+    color:#eee;
+    background: #2ecc71;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    padding: 8px 30px;
+    border: 2px solid #2ecc71;
+    border-radius: 30px;
+    cursor: pointer;
+}
+button:hover{
+    background: transparent;
+    border: 2px solid #2ecc71;
+    color: #2ecc71;
+    transition: .4s;
 
+} */
 
+.skills{
+    display:flex;
+    justify-content: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://img.freepik.com/free-vector/dark-blue-memphis-blog-banner-template_53876-98946.jpg?w=2000);
+    flex-wrap:wrap;
+
+}
+.edu{
+    width: 72vw;
+    padding: 40px;    
+    color: white;
+    background-color: transparent;
+    /* overflow-wrap: break-word; */
+
+}
+.eduskills{
+    width: 26vw;
+    height: auto;
+    padding:40px 20px;
+    background-color: blue;
+    color: white;
+    background-color: transparent;
+}
+
+.projects{
+    background-color:#403c3c;
+    width: 100%;
+    padding: 100px 0px;
+}
+.title h2{
+    color: white;
+    font-size:47px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    flex-wrap: wrap;
+}
+.cards{
+    height: auto;
+    width: 335px;
+    padding: 20px 35px;
+    background-color: #796c6c;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    /* overflow:scroll; */
+    text-align: center;
+}
+.cards img{
+    width: 300px;
+    margin-left: -16px;
+}    
+h5{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.card-body p{
+    /* color: */
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom:25px;
+}
+.cards .button{
+    color:#eee;
+    background: black;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 22px;
+    border: 2px solid grey;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.cards .button:hover{
+    
+    background: grey;
+    border: 2px solid black;
+    color: black;
+    transition: .4s;
+}
+.contact{
+    background-color: black;
+    padding-top: 5px;
+    
+}
+.bottom{
+    /* background-color: red; */
+    margin-top: 243px;
+    padding-bottom: 40px ;
+}
+.contact .bottom {
+    color:#eee;
+    letter-spacing: 2px;
+    font-size: 15px;
+    
+    
+}
 
 
 
